@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Contact|風景写真家「SNAPPERS」</title>
+    <link href="css/style.css" rel="stylesheet">
+<!--  WebフォントのHTMLコードを組み込む  -->
+    <link href="https://fonts.googleapis.com/css?family=Bitter:400,700&display=swap" rel="stylesheet">
+</head>
+<body id="contact">
+<!--  header始まり  -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="images/logo.png" alt="SNAPPERS"></a><!-- alt：画像を説明する代替テキストの記載 -->
+        </div>
+        <nav><!-- nav:ページ上の主要なナビゲーションを表す。 -->
+            <ul class="global-nav">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+<!--  header終わり  -->
+    
+<!--  wrap終わり  -->
+    <div id="wrap">
+        <div class="content">
+            <div class="main-center">
+                <h1>Contact</h1>
+                <p>SNAPPERSへのアクセス方法、お問い合わせ、撮影のご依頼フォームのページです。お気軽にお問い合わせください。</p>
+<!--                アクセスセクションを作成する-->
+                <section class="access clearfix">
+                    <h2 class="icon">Access</h2>
+<!--                    表組みを作成する-->
+                    <table>
+                        <tr>
+                            <th>所在地住所</th>
+                            <td>〒123-4567<br>静岡県伊東市伊豆高原◯△☆−12</td>
+                        </tr>
+                        <tr>
+                            <th>電話番号</th>
+                            <td>012-3456-7890</td>
+                        </tr>
+                        <tr>
+                            <th>電車でのアクセス</th>
+                            <td>伊豆急行「伊豆高原」駅より徒歩15分</td>
+                        </tr>
+                        <tr>
+                            <th>お車でのアクセス</th>
+                            <td>伊豆山I.Cより国道135号線経由で50分</td>
+                        </tr>
+                    </table>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3273.1518034583564!2d139.1059978151874!3d34.87753418038937!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6019dc91e6c93e4f%3A0xae7aa327d6680a4!2z5LyK6LGG6auY5Y6f6aeF!5e0!3m2!1sja!2sjp!4v1570156822670!5m2!1sja!2sjp" width="460" height="220" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+                </section>
+<!--                フォームセクションの作成-->
+                <section>
+                    <h2 class="icon">Contact form</h2>
+                    <div class="form">
+                        <form>
+<!--                            dl:定義リストを表す-->
+                            <dl>
+<!--                               dt:定義リストの用語を表す -->
+                                <dt><span class="required">お名前</span></dt>
+<!--                                dd:定義リストの定義語の説明部分を表す text:最も基本的なテキスト入力欄 required:その入力項目が入力必須であることをブラウザに知らせる-->
+                                <dd><input type="text" name="name" class="name" required></dd>
+                                <dt><span class="required">メールアドレス</span></dt>
+<!--                                email:email入力欄-->
+                                <dd><input type="email" name="email" class="email" required></dd>
+                                <dt>お電話番号</dt>
+<!--                                tel:電話番号入力欄-->
+                                <dd><input type="tel" name="tel" class="tel"></dd>
+                                <dt>お問い合わせ種別</dt>
+<!--                                select:選択式のメニューを表す。-->
+                                <dd><select name="type" class="type">
+<!--option:メニューの選択肢を作成する 
+value:どの項目が選択されたか認識するもの　フォームのデータが送信される時に、select要素のname属性と選択されたoption要素のvalue属性の値が一対になってサーバー上のプログラムに送られる -->
+                                        <option value="撮影のご依頼">撮影のご依頼</option>
+                                        <option value="講演・各種メディア出演のご依頼">講演・各種メディア出演のご依頼</option>
+                                        <option value="その他のお問い合わせ">その他のお問い合わせ</option>
+                                    </select>
+                                </dd>
+                                <dt>ご希望のご連絡方法</dt>
+                                <dd>
+                                    <input type="radio" name="contact" value="Eメール">Eメール
+                                    <input type="radio" name="contact" value="お電話">お電話
+                                </dd>
+                                <dt>メッセージ</dt>
+<!--                                textare:複数行のテキスト入力欄を作成する-->
+                                <dd><textarea name="message" class="message"></textarea></dd>
+                            </dl>
+<!--                            button:汎用的なボタンを作成する-->
+                            <button type="submit" class="btn">送信</button>
+                        </form>
+                        <div class="attention">
+                            <p>※「<span class="required"></span>」の付いている項目は必須項目です<br>※メッセージ送信後、48時間以内に担当者よりご連絡いたします。</p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </div>  
+<!-- wrap終わり   -->
+    
+<!-- footer終わり   -->
+    <footer>
+        <small>(C)2017 Hattori-studio.</small> <!-- small:細目などの注釈-->
+    </footer> 
+<!-- footer終わり   -->
+    
+</body>
+</html>
